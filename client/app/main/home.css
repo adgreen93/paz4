@@ -1,4 +1,67 @@
-.pubhome_body {
-	background: #fafafa;
+
+body {
+	font-family: 'Roboto', sans-serif;
+  background: #fafafa;
+  padding-top: 70px;
+  	height: 100%;
+    background-repeat: no-repeat;
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+ 
+}
+
+h1 {
+  color:black;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+p {
+	font-size: 20px;
+}
+
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+
+.btn-primary.outline {
+    border: 3px solid black;
+    color: black;
+}
+
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #33a6cc;
+    border-color: #33a6cc;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
+/* media queries */
+
+@media (min-width: @screen-sm-min) { 
+
+
+
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+
+
+
 
 }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { 
+
+
+
+
+ }

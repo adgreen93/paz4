@@ -1,16 +1,15 @@
+
+
 <navbar></navbar>
-<header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>Paz</h1>
-    <p class="lead">The tool that changes everything.</p>
-  </div>
-</header>
+
 <div class="container">
   <div class="row" style="paddding-top:10px;">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-md-6 col-md-offset-3">
       <form class="thing-form">
             <p class="input-group">
-              <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
+            <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing.name">
+            <input type="text" class="form-control" placeholder="Add info." ng-model="$ctrl.newThing.info">
+            <!-- <input type="hidden" class="form-control" value="$ctrl.getCurrentUser().name" ng-model="$ctrl.newThing.user"> -->
               <span class="input-group-btn">
               <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
               </span>
@@ -20,10 +19,14 @@
   </div>
 
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
-      <h1 class="page-header">Features:</h1>
-      <div class="well" ng-repeat="thing in $ctrl.awesomeThings">
-        <a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a>
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default" ng-repeat="thing in $ctrl.awesomeThings">
+        <div class="panel-heading">Info: {{thing.info}} </div>
+        <div class="panel-body">
+          <p style="font-size:20px;">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></p>
+
+        </div>
+
       </div>
     </div>
   </div>

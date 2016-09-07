@@ -25,9 +25,12 @@ export class MainController {
   addThing() {
     if (this.newThing) {
       this.$http.post('/api/things', {
-        name: this.newThing
+        name: this.newThing.name,
+        info: this.newThing.info,
+        user: this.newThing.user
       });
-      this.newThing = '';
+      this.newThing.name = '';
+      this.newThing.info = '';
     }
   }
 
@@ -43,3 +46,4 @@ export default angular.module('paz4App.main', [ngRoute])
     controller: MainController
   })
   .name;
+
