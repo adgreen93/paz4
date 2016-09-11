@@ -5,16 +5,18 @@
 <div class="container">
   <div class="row" style="paddding-top:10px;">
     <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-default">
       <form class="thing-form">
             <p class="input-group">
             <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing.name">
             <input type="text" class="form-control" placeholder="Add info." ng-model="$ctrl.newThing.info">
             <!-- <input type="hidden" class="form-control" value="$ctrl.getCurrentUser().name" ng-model="$ctrl.newThing.user"> -->
-              <span class="input-group-btn">
+              <div class="input-group-btn">
               <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
-              </span>
+              </div>
             </p>
       </form>
+    </div>
     </div>
   </div>
 
